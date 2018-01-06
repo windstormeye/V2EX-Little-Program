@@ -11,10 +11,23 @@ Page({
   },
   //事件处理函数
   bindViewTap: function() {
-    wx.navigateTo({
-      url: '../logs/logs'
+    wx.showModal({
+      title: '提示',
+      content: '你好呀小朋友',
+      showCancel: false,
+      confirmText: '是',
+      cancelText: '否',
+      cancelColor: '#ff0000',
+      success: function (res) {
+        if (res.confirm) {
+          wx.navigateTo({
+            url: '../logs/logs'
+          })
+        }
+      }
     })
   },
+
   onLoad: function () {
     if (app.globalData.userInfo) {
       this.setData({
@@ -42,6 +55,16 @@ Page({
         }
       })
     }
+
+    wx.showToast({
+      title: '成功',
+      icon: 'loading',
+      duration: 10000
+    })
+
+    setTimeout(function () {
+      wx.hideToast()
+    }, 2000)
   },
   getUserInfo: function(e) {
     console.log(e)
