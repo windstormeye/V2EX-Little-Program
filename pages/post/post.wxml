@@ -1,0 +1,27 @@
+<view class='contentView'>
+
+  <view class='headContentView'>
+    <view>
+      <text style='font-size:20px;'>标题</text>
+    </view>
+    <view>
+      <text class='headContentAuthorText'>作者</text>
+    </view>
+    <view>
+      <text class='headContentContentText'>内容</text>
+    </view>
+    <view class='replyContentView'>
+      <text class='replyContentText'>回复数目</text>
+      <text class='replyContentText'>节点</text>
+    </view>
+  </view>
+  <view class='sigleContentView'>
+    <view>
+      <text>用户名</text>
+    </view>
+    <view>
+      <text>内容</text>
+    </view>
+  </view>
+
+</view>

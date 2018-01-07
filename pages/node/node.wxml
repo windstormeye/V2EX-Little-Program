@@ -1,0 +1,29 @@
+<view>
+  <text>节点列表</text>
+  <view class='contentView'>
+    <view class='nodeContentView'>
+      <image class='nodeImage' src='https://v2ex.assets.uxengine.net/site/logo@2x.png' />
+      <text class='nodeText'>节点名称</text>
+    </view>
+
+        <view class='nodeContentView'>
+      <image class='nodeImage' src='https://v2ex.assets.uxengine.net/site/logo@2x.png' />
+      <text class='nodeText'>节点名称</text>
+    </view>
+
+        <view class='nodeContentView'>
+      <image class='nodeImage' src='https://v2ex.assets.uxengine.net/site/logo@2x.png' />
+      <text class='nodeText'>节点名称</text>
+    </view>
+
+        <view class='nodeContentView'>
+      <image class='nodeImage' src='https://v2ex.assets.uxengine.net/site/logo@2x.png' />
+      <text class='nodeText'>节点名称</text>
+    </view>
+
+        <view class='nodeContentView'>
+      <image class='nodeImage' src='https://v2ex.assets.uxengine.net/site/logo@2x.png' />
+      <text class='nodeText'>节点名称</text>
+    </view>
+  </view>
+</view>

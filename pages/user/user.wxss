@@ -1,0 +1,36 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userImage {
+  height: 50px;
+  width: 50px;
+}
+
+.titleView {
+  width: 100%;
+  border: 1px solid;
+  margin-top: 10px;
+}
+
+.titleTextView {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.titleText {
+  font-size: 20px;
+  color: #353535;
+}
+
+.replyView {
+  display: flex;
+  justify-content: space-between;
+}
+
+.replyText {
+  font-size: 18px;
+  color: #888;
+}

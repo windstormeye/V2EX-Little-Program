@@ -1,0 +1,24 @@
+<view class='page'>
+  <image src='https://v2ex.assets.uxengine.net/site/logo@2x.png' class='userImage' />
+  <text>text</text>
+  <view class='titleView'>
+    <view class='titleTextView'>
+      <text class='titleText'>这是标题</text>
+    </view>
+    <view class='replyView'>
+      <text class='replyText'>10条回复</text>
+      <text class='replyText'>节点</text>
+    </view>
+  </view>
+
+    <view class='titleView'>
+    <view class='titleTextView'>
+      <text class='titleText'>这是标题</text>
+    </view>
+    <view class='replyView'>
+      <text class='replyText'>10条回复</text>
+      <text class='replyText'>节点</text>
+    </view>
+  </view>
+
+</view>

@@ -1,0 +1,22 @@
+.contentView {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.nodeContentView {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 33%;
+  text-align: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.nodeImage {
+  width: 48px;
+  height: 49px;
+}
+
+.nodeText {
+  display: block;
+}

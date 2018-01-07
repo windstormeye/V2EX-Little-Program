@@ -1,13 +1,17 @@
-<!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
+<view class='page'>
+
+  <view style='margin-bottom:10px; padding:5px; border-bottom:5px solid #EFEFF3;'>
+    <view>
+      <image src='https://v2ex.assets.uxengine.net/site/logo@2x.png' class='headImage' />
+      <text class='headName'>text</text>
+    </view>
+    <view class='contentView'>
+      <text class='contentText'>这是标题</text>
+    </view>
+    <view class='replyView'>
+      <text class='replyText'>10条回复</text>
+      <text class='replyText'>节点</text>
+    </view>
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
+
 </view>

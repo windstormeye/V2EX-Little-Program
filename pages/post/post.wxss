@@ -1,0 +1,34 @@
+.contentView {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.headContentView {
+  background-color: #c2c2c2;
+  padding: 5px;
+}
+
+.headContentAuthorText {
+  font-size: 14px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.headContentContentText {
+  font-size: 17px;
+}
+
+.replyContentView {
+  display: flex;
+  justify-content: space-between;
+}
+
+.replyContentText {
+  font-size: 14px;
+}
+
+.sigleContentView {
+  margin-top: 20px;
+  color: #888;
+}

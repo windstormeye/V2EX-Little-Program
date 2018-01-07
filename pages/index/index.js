@@ -55,16 +55,6 @@ Page({
         }
       })
     }
-
-    wx.showToast({
-      title: '成功',
-      icon: 'loading',
-      duration: 10000
-    })
-
-    setTimeout(function () {
-      wx.hideToast()
-    }, 2000)
   },
   getUserInfo: function(e) {
     console.log(e)
