@@ -1,16 +1,22 @@
-<view class='page'>
+<loading hidden="{{hidden}}" bindchange="loadingChange">
+    加载中...
+  </loading>  
 
-  <view style='margin-bottom:10px; padding:5px; border-bottom:5px solid #EFEFF3;'>
-    <view>
-      <image src='https://v2ex.assets.uxengine.net/site/logo@2x.png' class='headImage' />
-      <text class='headName'>text</text>
-    </view>
-    <view class='contentView'>
-      <text class='contentText'>这是标题</text>
-    </view>
-    <view class='replyView'>
-      <text class='replyText'>10条回复</text>
-      <text class='replyText'>节点</text>
+<view class='page'>
+  <text class='viewTitleText'>最新主题</text>
+  <view wx:for='{{ content }}'>
+    <view class='postView' catchtap='onTouch' id='{{ item.id }}'>
+      <view>
+        <image src='{{item.member.avatar_mini}}' class='headImage' />
+        <text class='headName'>{{ item.member.username }}</text>
+      </view>
+      <view class='contentView'>
+        <text class='contentText'>{{ item.title }}</text>
+      </view>
+      <view class='replyView'>
+        <text class='replyText'>{{ item.replies }}条回复</text>
+        <text class='replyText'>{{ item.node.title }}</text>
+      </view>
     </view>
   </view>
 

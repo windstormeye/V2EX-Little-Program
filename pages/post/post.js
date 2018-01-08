@@ -4,14 +4,47 @@ Page({
    * 页面的初始数据
    */
   data: {
-    
+    post: [],
+    comment: []
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    
+    var that = this
+    // 文章内容
+    wx.request({
+      url: 'https://www.v2ex.com/api/topics/show.json?',
+      method: 'GET',
+      data: { id: options.id},
+      success: function(res) {
+        that.setData({
+          post: res.data[0]
+        })
+      }, fail: function(res) {
+
+      }, complete: function() {
+
+      }
+    })
+
+    // 评论内容
+    wx.request({
+      url: 'https://www.v2ex.com/api/replies/show.json',
+      method: 'GET',
+      data: { topic_id: options.id },
+      success: function (res) {
+        console.log(res)
+        that.setData({
+          comment: res.data
+        })
+      }, fail: function (res) {
+
+      }, complete: function () {
+
+      }
+    })
   },
 
   /**

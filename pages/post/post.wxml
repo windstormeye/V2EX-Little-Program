@@ -2,26 +2,27 @@
 
   <view class='headContentView'>
     <view>
-      <text style='font-size:20px;'>标题</text>
+      <text style='font-size:20px;'>{{ post.title }}</text>
     </view>
     <view>
-      <text class='headContentAuthorText'>作者</text>
+      <text class='headContentAuthorText'>{{ post.member.username }}</text>
     </view>
     <view>
-      <text class='headContentContentText'>内容</text>
+      <text class='headContentContentText'>{{ post.content }}</text>
     </view>
     <view class='replyContentView'>
-      <text class='replyContentText'>回复数目</text>
-      <text class='replyContentText'>节点</text>
+      <text class='replyContentText'>{{ post.replies }}条回复</text>
+      <text class='replyContentText'>{{ post.node.title }}</text>
     </view>
   </view>
   <view class='sigleContentView'>
-    <view>
-      <text>用户名</text>
-    </view>
-    <view>
-      <text>内容</text>
+    <view wx:for='{{ comment }}'>
+      <view>
+        <text>{{ item.member.username }}</text>
+      </view>
+      <view>
+        <text>{{ item.content }}</text>
+      </view>
     </view>
   </view>
-
 </view>

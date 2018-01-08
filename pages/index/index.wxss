@@ -1,34 +1,45 @@
 .page {
-  display:flex;
-  flex-direction:column;
+  display: flex;
+  flex-direction: column;
+}
+
+.viewTitleText {
+  color: #66cd00;
+}
+
+.postView {
+  margin-bottom: 10px;
+  padding: 5px;
+  border-bottom: 5px solid #efeff3;
 }
 
 .headImage {
-  height:20px;
-  width:20px;
+  height: 30px;
+  width: 30px;
 }
 
 .headName {
-  font-size:18px;
-  color:#888888;
+  font-size: 18px;
+  color: #888;
+  margin-left: 5px;
 }
 
 .contentView {
-  margin-top:10px; 
-  margin-bottom:10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .contentText {
-  font-size:20px;
-  color:#353535;
+  font-size: 20px;
+  color: #353535;
 }
 
 .replyView {
-  display:flex; 
-  justify-content:space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .replyText {
-  font-size:18px;
-  color:#888888;
+  font-size: 18px;
+  color: #888;
 }
